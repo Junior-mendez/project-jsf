@@ -24,6 +24,19 @@ public class PrincipalController {
 	 */
 	private List<Empleado> empleados;
 	/**
+	 * Lista de Empleados Filtrados para la tabla.
+	 */
+	private List<Empleado> empleadosFiltrados;
+	
+	public List<Empleado> getEmpleadosFiltrados() {
+		return empleadosFiltrados;
+	}
+
+	public void setEmpleadosFiltrados(List<Empleado> empleadosFiltrados) {
+		this.empleadosFiltrados = empleadosFiltrados;
+	}
+
+	/**
 	 * Servicio con los metodos qeu realiza la logica de empleado.
 	 */
 	private EmpleadoService empleadoService = new EmpleadoService();
